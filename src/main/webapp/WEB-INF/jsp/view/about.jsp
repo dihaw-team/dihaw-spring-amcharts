@@ -10,7 +10,7 @@
 			</div>
 			<p>	
 				This project developed By <a href="http://blog.dihaw.com" target="_blank">Wahid Gazzah</a>. 
-				The source code is available in <a href="https://github.com/dihaw-team/dihaw-spring-tiles" target="_blank">Github</a>.
+				The source code is available in <a href="https://github.com/dihaw-team/dihaw-spring-amcharts" target="_blank">Github</a>.
 			</p>
 			
 			<div class="about-title">
@@ -19,6 +19,7 @@
 			<ul>
 				<li><strong>Maven</strong></li>
 				<li><strong>Spring MVC</strong></li>
+				<li><strong>amCharts</strong></li>
 				<li><strong>Tiles</strong>: in order to create the template (header, body, menu, footer)</li>
 				<li><strong>logback</strong>: <a href="http://logback.qos.ch/" target="_blank">Logback</a> is intended as a successor to the popular log4j project, <a href="http://logback.qos.ch/reasonsToSwitch.html" target="_blank">picking up where log4j leaves off</a></li>
 			</ul>
@@ -34,8 +35,8 @@
 				<li>Choose URI at this point...</li>
 				<li>After import, click the right mouse button on your project, Configure -> Convert to Maven Project.</li>
 				<li>To run the project, use "clean compile install" cmd.</li>
-				<li>Go to http://localhost:port/dihaw-spring-tiles/</li>
-				<li>The <strong>log</strong> will be created on the <em>C:/dihaw/logs/dihaw-spring-tiles/SystemOut.log</em> file (see the <strong>logback.xml</strong> file)</li>
+				<li>Go to http://localhost:port/dihaw-spring-amcharts/</li>
+				<li>The <strong>log</strong> will be created on the <em>C:/dihaw/logs/dihaw-spring-amcharts/SystemOut.log</em> file (see the <strong>logback.xml</strong> file)</li>
 			</ul>
 			</br></br>  
 		</div>
