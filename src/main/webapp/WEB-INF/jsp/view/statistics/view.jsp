@@ -8,14 +8,9 @@
 			<div class="title">
 				<h3><spring:message code="chart.title"/></h3>
 
-				<div data-role="page" id="page4" data-theme="d">
-					<div data-role="content">
-						<div id="chartdiv" style="height: 500px;"></div>
-					</div> 
-				</div>
+				<div id="chartdiv" style="height: 350px;"></div>
 
 			</div>
-
 		</div>
     </tiles:putAttribute>
 </tiles:insertDefinition>

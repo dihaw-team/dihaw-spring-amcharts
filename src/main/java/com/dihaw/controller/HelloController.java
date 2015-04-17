@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -12,52 +11,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HelloController{
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 	
-	private static int counter = 0;
-	private static String INDEX_VIEW = "view/hello";
-	private static String ABOUT_VIEW = "view/about";
+	private static String ABOUT_VIEW = "view/about/view";
 	private static String STATISTICS_VIEW = "view/statistics/view";
-	
-	private static String MESSAGE = "message";
-	private static String COUNTER = "counter";
-	
     
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showHelloView(Model model) {
 		
-		model.addAttribute(MESSAGE, "Welcome");
-		model.addAttribute(COUNTER, ++counter);
-		
-		logger.debug("welcome counter : {}", counter);
+		logger.info("Show the about view ");
  
-		return INDEX_VIEW;
+		return ABOUT_VIEW;
  
 	}
 	
-	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
-	public String welcomeName(@PathVariable String name, Model model) {
- 
-		model.addAttribute(MESSAGE, "Welcome " + name);
-		model.addAttribute(COUNTER, ++counter);
-		
-		logger.debug("welcomeName counter : {}", counter);
-		
-		return INDEX_VIEW;
- 
-	}
-	
-	@RequestMapping("/statistic")
+	@RequestMapping("/statistics")
 	public String showStatisticsView(Model model) {
 		
-		logger.info("Show the statistics ");
+		logger.info("Show the chart view ");
  
 		return STATISTICS_VIEW;
  
 	}
 
-	@RequestMapping(value = "/about", method = RequestMethod.GET)
-	public String showAboutView() {
- 
-		return ABOUT_VIEW;
-	}
-	
+
 }

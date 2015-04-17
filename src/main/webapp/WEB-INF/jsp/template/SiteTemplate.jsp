@@ -12,8 +12,6 @@
 		
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/pie.js"></script>
-		<script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
-		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/light.js"></script>
 
 		<script type="text/javascript" src="<c:url value="/static/js/jquery-1.9.1.min.js" />"></script>
 		<script type="text/javascript" src="<c:url value="/static/js/jquery-ui-1.10.3.min.js" />"></script>

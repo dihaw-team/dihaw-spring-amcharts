@@ -63,7 +63,7 @@ function createChartPie(container) {
 	chart.addTitle('AmPieChart example',12, '#045c97 ', 1, true);
 	
 	// this makes the chart 3D
-	chart.depth3D = 20;
+	chart.depth3D = 15;
 	chart.angle = 30;
 	chart.labelsEnabled = false;
 	chart.labelRadius = -30;

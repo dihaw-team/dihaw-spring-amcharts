@@ -19,7 +19,7 @@
 			<ul>
 				<li><strong>Maven</strong></li>
 				<li><strong>Spring MVC</strong></li>
-				<li><strong>amCharts</strong></li>
+				<li><strong>amCharts</strong>: <a href="http://www.amcharts.com" target="_blank">JavaScript Charts and Maps</a></li>
 				<li><strong>Tiles</strong>: in order to create the template (header, body, menu, footer)</li>
 				<li><strong>logback</strong>: <a href="http://logback.qos.ch/" target="_blank">Logback</a> is intended as a successor to the popular log4j project, <a href="http://logback.qos.ch/reasonsToSwitch.html" target="_blank">picking up where log4j leaves off</a></li>
 			</ul>
