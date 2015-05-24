@@ -28,7 +28,7 @@ public class StatisticsServicesImpl implements StatistiquesServices{
 		
 		ListDataResponseDTO list = new ListDataResponseDTO();
 		
-		logger.info("invok serialChart rep stat");
+		logger.info("invok statistiques repository");
 		
 		List<Statistiques> dataList = statistiquesRepository.list();
 		

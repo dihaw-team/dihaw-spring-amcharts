@@ -9,11 +9,9 @@ var urlresource = $('#urlresourcedata').data('urldata');
 		dataType : 'json',
 		success : function(resp) {
 			var jsonString = JSON.stringify(resp.data);
+			
 			chartDataUsed = eval('(' + jsonString + ')');
 			
-			$('.date').html(chartDataUsed[0]);
-			$('.value').html(chartDataUsed[1]);
-
 			chart = new AmCharts.AmPieChart();
 			chart.titleField = "date";
 			chart.valueField = "value";

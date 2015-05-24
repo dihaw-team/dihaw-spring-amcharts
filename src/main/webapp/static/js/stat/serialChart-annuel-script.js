@@ -1,7 +1,9 @@
-window.onload = function() {
 
-	var urlresource = $('#urlresourcedata').data('urldata');
+window.onload = function() {
 	
+
+var urlresource = $('#urlresourcedata').data('urldata');
+
 	$.ajax({
 		url : urlresource,
 		dataType : 'json',

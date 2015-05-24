@@ -34,7 +34,7 @@ window.onload = function() {
 			chart.outlineColor = "#f5f5f5";
 			chart.outlineAlpha = 0.8;
 			chart.outlineThickness = 1;
-			chart.addTitle('Statistiques mensuelles',12, '#045c97 ', 1, true);
+			chart.addTitle('Statistiques quotidiennes',12, '#045c97 ', 1, true);
 			
 			// this makes the chart 3D
 			chart.depth3D = 15;
