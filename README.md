@@ -6,6 +6,7 @@ Maven Spring MVC Application
 	* Maven
 	* Spring MVC
 	* amCharts: JavaScript Charts and Maps
+	* JPA: Java Persistence API
 	* Tiles: in order to create the template (header, body, menu, footer)
 	* logback: Logback is intended as a successor to the popular log4j project.
 
