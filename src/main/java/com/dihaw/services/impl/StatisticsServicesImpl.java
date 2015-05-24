@@ -1,57 +1,41 @@
 package com.dihaw.services.impl;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.dihaw.dto.DataDTO;
 import com.dihaw.dto.ListDataResponseDTO;
-import com.dihaw.services.StatisticsServices;
+import com.dihaw.entity.Statistiques;
+import com.dihaw.repository.StatistiquesRepository;
+import com.dihaw.services.StatistiquesServices;
 
 @Service
 @Transactional(propagation = Propagation.SUPPORTS)
-public class StatisticsServicesImpl implements StatisticsServices{
+public class StatisticsServicesImpl implements StatistiquesServices{
 	
 	private final Logger logger = LoggerFactory.getLogger(getClass());
+	
+	@Autowired
+	StatistiquesRepository statistiquesRepository;
 
 	@Transactional(propagation = Propagation.REQUIRED)
-	public ListDataResponseDTO getDataValues(){
+	public ListDataResponseDTO getSerialChartValues() {
 		
-		DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		ListDataResponseDTO list = new ListDataResponseDTO();
 		
-		List<DataDTO> dataList = new ArrayList<DataDTO>();
+		logger.info("invok serialChart rep stat");
 		
-		try {
-			dataList.add(new DataDTO(formatter.parse("2015-02-23"), 133034));
-			dataList.add(new DataDTO(formatter.parse("2015-02-24"), 122290));
-			dataList.add(new DataDTO(formatter.parse("2015-02-25"), 383603));
-			dataList.add(new DataDTO(formatter.parse("2015-02-28"), 125285));
-			dataList.add(new DataDTO(formatter.parse("2015-03-01"), 118042));
-			dataList.add(new DataDTO(formatter.parse("2015-03-02"), 102500));
-			dataList.add(new DataDTO(formatter.parse("2015-03-03"), 434047));
-			dataList.add(new DataDTO(formatter.parse("2015-03-04"), 422374));
-			dataList.add(new DataDTO(formatter.parse("2015-03-07"), 396473));
-			dataList.add(new DataDTO(formatter.parse("2015-03-08"), 453142));
-			
-		} catch (ParseException e) {
-
-			logger.error("ParseException: "+e.getMessage());
-		}
+		List<Statistiques> dataList = statistiquesRepository.list();
 		
-
-		ListDataResponseDTO response = new ListDataResponseDTO();
+		list.setData(dataList);
 		
-		response.setData(dataList);
-		
-		return response;
+		return list;
 	}
+
 
 }

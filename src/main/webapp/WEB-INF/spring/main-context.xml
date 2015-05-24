@@ -7,7 +7,9 @@
 
 	<context:annotation-config />
 	
-	<context:component-scan base-package="com.dihaw" />
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+ 		<property name="locations" value="WEB-INF/conf/*.properties" />
+	</bean>
 	
 	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
 		<property name="defaultLocale" value="fr" ></property>
@@ -19,13 +21,15 @@
 		<property name="basename" value="content.Language" />
 	</bean>
 	
-	<!-- bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
-		<property name="extractValueFromSingleKeyModel" value="true" />
-		<property name="modelKey" value="json" />
-		<property name="contentType" value="application/json" />
-	</bean -->
+	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate" />
 	
-	<bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+	<!--Dispatches requests mapped to POJO @Controllers implementations-->
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                 <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
+            </list>
+        </property>
 	</bean>
 	
 </beans>
