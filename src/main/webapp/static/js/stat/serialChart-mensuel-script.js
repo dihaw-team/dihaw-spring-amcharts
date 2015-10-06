@@ -1,6 +1,7 @@
 window.onload = function() {
 	
-	var urlresource = $('#urlresourcedata').data('urldata');
+	
+var urlresource = $('#urlresourcedata').data('urldata');
 	
 	$.ajax({
 		url : urlresource,

@@ -1,6 +1,7 @@
 window.onload = function() {
 	
-	var urlresource = $('#urlresourcedata').data('urldata');
+	
+var urlresource = $('#urlresourcedata').data('urldata');
 	
 	$.ajax({
 		url : urlresource,
@@ -17,7 +18,6 @@ window.onload = function() {
 			var categoryAxis = chart.categoryAxis;
 			categoryAxis.parseDates = true;
 			
-			console.log("-----1");
 			
 			chart.graphs= [{
 		        "balloonText": "[[category]]: <b>[[value]]</b>",

@@ -9,8 +9,8 @@
 				<h3>About this project</h3>
 			</div>
 			<p>	
-				This project developed By <a href="http://blog.dihaw.com" target="_blank">Wahid Gazzah</a>. 
-				The source code is available in <a href="https://github.com/dihaw-team/dihaw-spring-amcharts" target="_blank">Github</a>.
+				This project developed By <a href="http://blog.dihaw.com" target="_blank" style="font-family: 'Tangerine', serif; font-size: 30px;">Wahid Gazzah</a>. 
+				The source code is available in <a href="https://github.com/dihaw-team/dihaw-spring-amcharts" target="_blank" >Github</a>.
 			</p>
 			
 			<div class="about-title">

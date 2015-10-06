@@ -8,6 +8,8 @@
 		
 		<link href="<c:url value="/static/css/style.css" />" rel="stylesheet" />
 		<link type="image/gif" href="<c:url value="/static/images/favicon.png" />" rel="icon">
+		
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
 		<script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/light.js"></script>

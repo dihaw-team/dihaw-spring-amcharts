@@ -99,6 +99,8 @@ div#home-title {
     font-size: 1.5em;
     margin: -33px 140px -10px 30px;
 	width: 50%;
+	#font-family: 'Tangerine', serif;
+	#font-size: 48px;
 }
 
 #main-message{
@@ -847,7 +849,7 @@ h3{
 }
 
 .about-title h3{
-	 color: #b36306 !important;
+	color: #b36306 !important;
 }
 
 
