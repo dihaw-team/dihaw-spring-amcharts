@@ -1,5 +1,7 @@
 # dihaw-spring-amcharts
 Maven Spring MVC Application
+======================
+![dihaw-team](http://team.dihaw.com/images/team-logo.png)
 
 ## Technology used:
 	
